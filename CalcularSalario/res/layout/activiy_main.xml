@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite seu salário (R$)"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <EditText
+        android:id="@+id/edsalario"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"
+        android:text="0" />
+    
+   	<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qual é o seu percentual?" />
+
+   	<RadioGroup
+   	    android:id="@+id/rgopcoes"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content" >
+
+   	    <RadioButton
+   	        android:id="@+id/rb40"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:text="40%" />
+
+   	    <RadioButton
+   	        android:id="@+id/rb45"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:text="45%" />
+
+   	    <RadioButton
+   	        android:id="@+id/rb50"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:text="50%" />
+   	    
+   	</RadioGroup>
+
+   	<Button
+   	    android:id="@+id/btn_calcular"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:text="Calcular novo salário"
+   	    android:layout_marginBottom="10dp" />
+
+   	<LinearLayout
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content" >
+
+   		<TextView
+   		    android:id="@+id/textView3"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:text="Seu salario:" />
+
+   		<TextView
+   		    android:id="@+id/resultado"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:text="não calculado" />
+
+   	</LinearLayout>
+   	
+</LinearLayout>
